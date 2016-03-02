@@ -18,7 +18,7 @@ app.get('/todos', function(req, res){
 });
 
 // Get the port from environment variables
-var port = process.env.PORT || 8000;
+var port = process.env.PORT || 3100;
 
 app.listen(port);
 
