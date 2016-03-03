@@ -1,9 +1,9 @@
 var todo = {
   setup: function(todos){
-    // todo.app = new todo.App({
-    //   el: '#todo-app',
-    //   items: todos
-    // });
+    todo.app = new todo.App({
+      el: '#todo-app',
+      items: todos
+    });
 console.log('hiiiiiiiii ', todos);
   },
   // Pass true to enable debug mode, which starts with no data from the server.
