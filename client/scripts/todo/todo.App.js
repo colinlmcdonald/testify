@@ -1,9 +1,9 @@
 todo.App = function(options) {
 	// refer to the todo.js file to see options
 	this.el = document.querySelector(options.el);
-	console.log("This element ************", options.items.length);
+	console.log("This element ************", options.el);
 	this.items = options.items || [];
-
+	console.log('88888888 ', document.querySelector('.todo-list'));
 	this.render();
 	this.addListeners();
 };

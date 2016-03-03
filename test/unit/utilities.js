@@ -31,16 +31,14 @@ describe('the todo.util methods', function() {
     expect(todo.util).to.have.property('isValidTodoName');
     expect(todo.util).to.have.property('getUniqueId');
   })
-  //isvalidtodoname should not equal 
   it('should return false for an invalid name', function() {
     expect(todo.util.isValidTodoName('blah')).to.equal(true);
   })
-
-  it('should have a length of however many items pushed in', function(){
-    var things = {
-      items: ['wash car', 'visit mom', 'burn this mother down'],
-      el: "section"}
-    var myList = new todo.App(things);
-    expect(myList.items).to.have.length(3);
+  it('should not return a value less than one', function() {
+    var hello = todo.util.getUniqueId;
+    expect(hello()).to.not.equal(!1);
+  })
+  it('should trim whitespace', function() {
+    expect(todo.util.trimTodoName('hello there darling')).length.to.be(19);
   })
 });
